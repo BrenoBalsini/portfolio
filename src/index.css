@@ -1,2 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-background: #F0F2F5;
+  --color-brand-dark: #1A1A1A;
+  --color-brand-gray: #9CA3AF;
+  --color-brand-primary: #10B981;
+
+  --font-family-sans: "Inter", sans-serif;
+  --font-family-serif: "Lora", serif;
+}
