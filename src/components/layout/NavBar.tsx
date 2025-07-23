@@ -1,3 +1,5 @@
+import cvFile from "../../assets/breno-balsini.pdf"
+
 export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-primary/80 backdrop-blur-sm z-50 shadow-lg">
@@ -23,10 +25,10 @@ export default function Navbar() {
           </a>
         </div>
         <a
-          href="/breno-balsini.pdf"
+          href={cvFile}
           target="_blank"
-          rel="noopener noreferrer"
-          download
+          rel=""
+          download="breno-balsini.pdf"
           className="border border-highlight text-highlight px-4 py-2 rounded-md hover:bg-highlight/10 transition-colors"
         >
           Meu CV

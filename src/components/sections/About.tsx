@@ -9,15 +9,15 @@ export default function About() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <div className="md:col-span-2 text-text-secondary">
-            <p className="mb-4">
-              Minha jornada no mundo digital começou de uma forma prática e
+            <p className="mb-4 text-justify md:text-left">
+              Minha jornada no mundo digital começou de uma forma prática e 
               focada em resultados: construindo aplicações com a plataforma
               no-code Bubble. Essa experiência foi fundamental, pois me ensinou
               a pensar como um criador de produtos, focando na lógica de
               negócio, na experiência do usuário e na agilidade para transformar
               uma ideia em algo funcional e validável.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-justify md:text-left">
               Hoje, meu foco principal está no ecossistema React, utilizando
               TypeScript para garantir um código limpo e de fácil manutenção.
               Sou um grande entusiasta do Tailwind CSS pela agilidade que ele
@@ -26,14 +26,14 @@ export default function About() {
               na resolução de problemas e uma atenção especial aos detalhes que
               impactam a experiência do usuário.
             </p>
-            <p>Aqui estão algumas tecnologias com as quais tenho trabalhado:</p>
-            <ul className="grid grid-cols-2 gap-2 mt-4 list-inside list-disc marker:text-highlight">
-              <li>JavaScript (ES6+)</li>
-              <li>TypeScript</li>
+            <p className="text-justify md:text-left">Aqui estão algumas tecnologias com as quais tenho trabalhado:</p>
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-2 mt-4 list-inside list-disc marker:text-highlight w-fit mx-auto md:mx-0">
               <li>React</li>
-              <li>Node.js</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
               <li>Tailwind CSS</li>
-              <li>Figma</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
             </ul>
           </div>
           <div className="relative group w-64 h-64 mx-auto">
