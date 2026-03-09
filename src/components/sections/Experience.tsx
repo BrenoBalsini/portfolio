@@ -2,11 +2,14 @@
 
 import { motion } from "framer-motion";
 import { experiences, techSkills, education } from "../../app/data/experience";
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap, Wrench } from "lucide-react";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 px-4 bg-gray-50 dark:bg-gray-800/50">
+    <section
+      id="experience"
+      className="py-20 px-4 bg-gray-50 dark:bg-gray-800/50"
+    >
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +18,9 @@ export default function Experience() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Experience & Skills</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Experience & Skills
+          </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
             Professional experience and technical expertise
           </p>
@@ -27,7 +32,7 @@ export default function Experience() {
             <Briefcase className="text-blue-600 dark:text-blue-400" />
             Professional Experience
           </h3>
-          
+
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.id}
@@ -66,7 +71,9 @@ export default function Experience() {
                       key={idx}
                       className="text-gray-600 dark:text-gray-400 flex items-start gap-2"
                     >
-                      <span className="text-blue-600 dark:text-blue-400 mt-1">▸</span>
+                      <span className="text-blue-600 dark:text-blue-400 mt-1">
+                        ▸
+                      </span>
                       <span>{achievement}</span>
                     </li>
                   ))}
@@ -89,7 +96,10 @@ export default function Experience() {
 
         {/* Technical Skills */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8">Technical Skills</h3>
+          <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
+            <Wrench className="text-blue-600 dark:text-blue-400" />
+            Technical Skills
+          </h3>
           <div className="grid md:grid-cols-2 gap-6">
             {techSkills.map((skill, index) => (
               <motion.div
@@ -135,8 +145,13 @@ export default function Experience() {
                 className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg"
               >
                 <h4 className="text-xl font-bold mb-2">{edu.institution}</h4>
-                <p className="text-gray-700 dark:text-gray-300 mb-2">{edu.degree}</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">{edu.period}</p>
+                <p className="text-gray-700 dark:text-gray-300 mb-2">
+                  {edu.degree}
+                </p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  {edu.period}
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-500 italic">{edu.note}</p>
               </motion.div>
             ))}
           </div>

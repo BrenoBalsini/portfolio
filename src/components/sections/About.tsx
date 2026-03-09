@@ -8,23 +8,27 @@ export default function About() {
     {
       icon: <Code2 className="w-6 h-6" />,
       title: "Clean Code",
-      description: "Focused on writing maintainable, type-safe code with React and TypeScript"
+      description:
+        "Type-safe architecture with React and TypeScript — readable, scalable and easy to maintain",
     },
     {
       icon: <Rocket className="w-6 h-6" />,
-      title: "Fast Delivery",
-      description: "Experienced in rapid prototyping and MVP development for startups"
+      title: "Full Cycle",
+      description:
+        "From UI design and prototyping to API integration, deployment and iteration with real users",
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "User-Centric",
-      description: "Translating complex requirements into intuitive user experiences"
+      description:
+        "Working closely with end users to gather requirements and continuously improve UX",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Performance",
-      description: "Optimizing applications for speed and scalability"
-    }
+      title: "Production-Ready",
+      description:
+        "Projects built for real clients and teams, not just demos — tested, deployed and in active use",
+    },
   ];
 
   return (
@@ -39,8 +43,9 @@ export default function About() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
-            I'm a frontend engineer specializing in React and TypeScript, with a passion for 
-            building scalable B2B SaaS applications and solving complex technical challenges.
+            Frontend Full Stack Engineer focused on solving real operational
+            problems — building apps that are actually used, by real people, in
+            production.
           </p>
         </motion.div>
 
@@ -75,19 +80,30 @@ export default function About() {
           <h3 className="text-2xl font-bold mb-4">Background</h3>
           <div className="space-y-4 text-gray-600 dark:text-gray-400">
             <p>
-              With a strong foundation in mathematics from UTFPR, I bring analytical thinking 
-              and problem-solving skills to every project. My experience ranges from building 
-              complex scheduling algorithms to architecting full-stack B2B platforms.
+              I'm a self-driven developer with a background in mathematics and a
+              passion for turning real problems into working software. Since 2022
+              I've been working as a freelance frontend engineer, owning the full
+              development cycle — from understanding the problem with the client
+              to shipping and iterating in production.
             </p>
             <p>
-              Currently, I work as a freelance software engineer, collaborating with multiple 
-              startups to deliver end-to-end product features. I specialize in the React ecosystem, 
-              with expertise in Next.js, TypeScript, and modern state management solutions.
+              My projects solve concrete operational challenges: the{" "}
+              <strong className="text-gray-800 dark:text-gray-200">
+                BAC Lifeguard Scheduling System
+              </strong>{" "}
+              replaced manual spreadsheets for a local lifeguard team with a
+              custom algorithm handling shift constraints and staff quotas. The{" "}
+              <strong className="text-gray-800 dark:text-gray-200">
+                Flor de Sal Craft Pricing App
+              </strong>{" "}
+              is a full-stack tool used daily by a real artisan client to manage
+              materials and automate product pricing.
             </p>
             <p>
-              I'm passionate about performance optimization, clean architecture, and creating 
-              seamless user experiences. When I'm not coding, you'll find me playing guitar, 
-              exploring music theory, or diving into the latest tech innovations.
+              I specialize in the React ecosystem — Next.js, TypeScript,
+              TailwindCSS, Firebase — and I'm comfortable working across the
+              stack when needed. I care about code quality, usability, and
+              building things that actually work for the people using them.
             </p>
           </div>
         </motion.div>
