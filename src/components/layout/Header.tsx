@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileDown } from "lucide-react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +34,10 @@ export default function Header() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold text-blue-600 dark:text-blue-400">
+        <Link
+          href="/"
+          className="text-xl font-bold text-blue-600 dark:text-blue-400"
+        >
           B.
         </Link>
 
@@ -49,6 +52,17 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
+
+          {/* CV Download button */}
+          <a
+            href="/breno-balsini-resume.pdf"
+            download
+            className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors"
+          >
+            <FileDown size={16} />
+            Resume
+          </a>
+
           <ThemeToggle />
         </div>
 
@@ -79,6 +93,16 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
+
+            {/* CV Download no mobile menu também */}
+            <a
+              href="/breno-balsini-resume.pdf"
+              download
+              className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors w-fit"
+            >
+              <FileDown size={16} />
+              Resume
+            </a>
           </div>
         </div>
       )}
